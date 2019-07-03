@@ -19,7 +19,7 @@ end
 
 def get_japanese_emoticon(file_name, emoticon)
   translator = load_library(file_name)
-  translator.each do |upper_level, inner_emote|
+  if translator["get_meaning"]
     
   end
 end
