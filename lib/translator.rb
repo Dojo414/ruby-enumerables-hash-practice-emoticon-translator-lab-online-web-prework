@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_name, emoticon)
   if translator["get_emoticon"].has_key?(emoticon)
     answer = translator["get_emoticon"][emoticon]
     return answer
-  else puts ""
+  else puts "Sorry, that emoticon was not found"
   end
 end
 
