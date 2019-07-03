@@ -17,8 +17,9 @@ def load_library(file)
   translator
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_name, emoticon)
+  load_library(file)
+  binding.pry
 end
 
 def get_english_meaning
