@@ -19,10 +19,8 @@ end
 
 def get_japanese_emoticon(file_name, emoticon)
   translator = load_library(file_name)
+  binding.pry
   translator.each do |upper_level, inner_emote|
-    
-      end
-    end
   end
 end
 
