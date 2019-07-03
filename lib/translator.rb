@@ -22,7 +22,6 @@ def get_japanese_emoticon(file_name, emoticon)
   if translator["get_emoticon"].has_key?
     answer = translator["get_emoticon"][emoticon]
     binding.pry
-  end 
   end
 end
 
