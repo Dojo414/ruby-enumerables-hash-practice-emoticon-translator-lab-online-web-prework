@@ -20,10 +20,10 @@ end
 def get_japanese_emoticon(file_name, emoticon)
   translator = load_library(file_name)
   translator.each do |upper_level, inner_emote|
-    if upper_level === "get_emoticon"
-     
+    if upper_level === "get_emoticon" 
+      if upper_level.has_key? (emoticon)
+        answer = upper_level[emoticon]
           binding.pry
-        end
       end
     end
   end
