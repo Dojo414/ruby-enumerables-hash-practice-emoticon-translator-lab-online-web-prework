@@ -19,8 +19,10 @@ end
 
 def get_japanese_emoticon(file_name, emoticon)
   translator = load_library(file_name)
-  if translator["get_meaning"]
-    
+  if translator["get_emoticon"].has_key?
+    answer = translator["get_emoticon"][emoticon]
+    binding.pry
+  end 
   end
 end
 
